@@ -1,0 +1,34 @@
+/* import React, { useState } from 'react'
+import MealCards from './MealCards'
+
+const Recipe = () => {
+    const [data,setData]=useState()
+    const[search,setSearch]=useState()
+
+    const handleInput=(event)=>{
+        setSearch(event.target.value)
+    }
+    const myFun=async ()=>{
+        const get=await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+        const jsonData= await get.json()
+        setData(jsonData.meals)
+    }
+
+    console.log(data)
+
+
+  return (
+    <div className=''>     
+        <div className='container'>
+            <div className='searchBar'>
+                <input type='text' placeholder='Enter Dishe' onChange={handleInput}/>
+                <button onClick={myFun}>Search</button>
+            </div>
+            <MealCards detail={data}/>
+        </div>
+    </div>
+  )
+}
+
+export default Recipe
+ */

@@ -1,0 +1,15 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background: #ced8ff; */
+    font-family: sans-serif;
+}  
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    html{
+        font-family: sans-serif;
+    }
+}
